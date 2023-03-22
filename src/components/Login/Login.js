@@ -2,7 +2,7 @@ import React from "react";
 
 const Login = () => {
   const handleLoginClick = () => {
-    window.location.href = "http://localhost:3001/auth/twitter";
+    window.location.href = process.env.REACT_APP_API_URL + "/auth/twitter";
   };
   return (
     <div>
